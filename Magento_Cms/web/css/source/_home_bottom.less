@@ -24,7 +24,6 @@
         }
 
 
-
         .slick-prev {
             left: 10px;
         }
@@ -114,7 +113,6 @@
         content: "\203A";
     }
 }
-
 
 
 //desktop
@@ -337,13 +335,20 @@
     .hide-on-mobile {
         display: none;
     }
-    .homepage-foursixty .list-fs .slick-slide {
-        margin-top: 77px;
+
+    .homepage-foursixty .list-fs {
+        margin: 0px -5px;
+
+        .slick-slide {
+            margin-top: 77px;
+            padding: 5px !important;
+        }
     }
+
     .home-three-tiles.home-bottom {
         margin-top: -5px;
     }
-    
+
     .homepage-products .block,
     .customer-review .product-details,
     .block-banners,
@@ -355,15 +360,19 @@
         .slick-slide {
             padding-bottom: 77px;
         }
+
         li.product-item {
             margin-top: -91px;
         }
+
         .product-item-info .product-item-details {
             margin-top: 9%;
         }
+
         .block.widget .product-item-info {
             margin-top: 82px;
         }
+
         .widget .block-title:before,
         .block-wishlist .block-title:before {
             top: 16px;
@@ -383,6 +392,7 @@
     .homepage-foursixty p {
         display: inline-block;
         width: 100%;
+        margin-bottom: 31px;
     }
 
     .outdoor-inspiration-button-view p a {
@@ -480,6 +490,7 @@
 
     .home-three-tiles .home-row .absolute-wrapper-for-banner .display-table-cell h3 {
         position: absolute;
+
         &.bot {
             left: 18.5%;
             top: 31%;
@@ -612,9 +623,11 @@
         width: 100%;
         z-index: -1;
     }
+
     .homepage-products .slick-list {
         margin-top: -85px;
     }
+
     .homepage-foursixty h3 {
         font-size: 22px;
         letter-spacing: 1.5px;
@@ -806,23 +819,28 @@
         padding-right: 10px;
     }
 }
+
 .slick-dots {
     bottom: -25px;
+
     li button:before,
     li.slick-active button:before {
-      color: transparent;
-      opacity: 1;
+        color: transparent;
+        opacity: 1;
     }
-    li button:before{
-      background-color: transparent;
-      border: 1px solid #cccccc;;
-      border-radius: 50%;
-      display: inline-block;
-      height: 10px;
-      width: 10px;
-  
+
+    li button:before {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+        ;
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+
     }
+
     li.slick-active button:before {
-      background-color: #cccccc;
+        background-color: #cccccc;
     }
-  }
+}
