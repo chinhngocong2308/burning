@@ -1,0 +1,55 @@
+<?= $this->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-categories')
+    ->toHtml();
+?>
+<?= $this->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-why-burning-log')
+    ->toHtml();
+?>
+<?= $this->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('footer-middle-policies')
+    ->toHtml();
+?>
+
+<script>
+    require(['jquery', 'accordion'], function($) {
+        // collapse links    
+        $(".category.mobile").accordion({
+            "active": false,
+			"openedState": "active",
+			"collapsible": true,
+			"multipleCollapsible": false,
+            "icons": {
+                "header": "las la-plus",
+                "activeHeader": "las la-plus icon-rotate"
+            }
+        });
+        $(".footer-burning.mobile").accordion({
+            "active": false,
+			"openedState": "active",
+			"collapsible": true,
+			"multipleCollapsible": false,
+            "icons": {
+                "header": "las la-plus",
+                "activeHeader": "las la-plus icon-rotate"
+            }
+        });
+        $(".footer-policies.mobile").accordion({
+            "active": false,
+			"openedState": "active",
+			"collapsible": true,
+			"multipleCollapsible": false,
+            "icons": {
+                "header": "las la-plus",
+                "activeHeader": "las la-plus icon-rotate"
+            }
+        });
+        // // toggle click icon 
+        // $("#footer-all-links > .links-item > .links-item__text-big > i").click(function () {
+        //     $("#footer-all-links > .links-item > .links-item__text-big > i").toggleClass("icon-rotate");
+        // });
+    });
+</script>
